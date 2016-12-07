@@ -59,7 +59,7 @@ map ˜ :w
 map µ :make
 map ∫ :wq
 " C-like indentation
-set cindent
+"set cindent
 " Enable syntax highlighting
 syntax on
 " Allow mouse click
@@ -94,3 +94,7 @@ let g:tagbar_type_go = {
     \ 'ctagsbin'  : 'gotags',
     \ 'ctagsargs' : '-sort -silent'
 \ }
+
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
